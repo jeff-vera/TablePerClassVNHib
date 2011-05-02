@@ -72,13 +72,17 @@
   <ItemGroup>
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerMap.cs" />
+    <Compile Include="Entity.cs" />
     <Compile Include="Manager.cs" />
     <Compile Include="ManagerMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs" />
+    <Compile Include="RoleMap.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserMap.cs" />
     <Compile Include="UserRepo.cs" />
     <Compile Include="UserRepoTests.cs" />
+    <Compile Include="UserRole.cs" />
     <Compile Include="UserSessionFactory.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,19 +3,18 @@ using FluentNHibernate.Mapping;
 
 namespace FNHFun
 {
-	public class UserMap : ClassMap<User>
+	public class RoleMap : ClassMap<Role>
 	{
-		public UserMap()
+		public RoleMap()
 		{
-			Table("Users");
+			Table("Roles");
 
 			Id(x => x.Id)
 				.GeneratedBy.Identity();
 
-			Map(x => x.FirstName);
-			Map(x => x.LastName);
+			Map(x => x.Name);
 
-			HasManyToMany<Role>(x => x.Roles)
+			HasManyToMany<User>(x => x.AssignedUsers)
 				.Table("UserRoles")
 				.Cascade.SaveUpdate();
 		}
